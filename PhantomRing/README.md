@@ -123,6 +123,7 @@ The `killbpf` capability was intentionally **not executed**.
 
 - [Static analysis](./static-analysis.md)
 - [Dynamic analysis](./dynamic-analysis.md)
+- [Network analysis](./network-analysis.md)
 - [Indicators and artifacts](./iocs.md)
 
 ---
