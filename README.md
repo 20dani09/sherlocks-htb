@@ -9,6 +9,7 @@ Personal write-ups and malware-analysis notes for Hack The Box Sherlocks.
 | Sherlock | Focus | Status |
 |---|---|---|
 | [PhantomRing](./PhantomRing/) | Linux malware analysis, `io_uring`, C2, defense evasion | ✅ Completed |
+| [Baggage](./Baggage/) | Windows registry forensics, ShellBags, attacker collection and staging | ✅ Completed |
 
 ---
 
