@@ -11,6 +11,7 @@ Personal write-ups and malware-analysis notes for Hack The Box Sherlocks.
 | [PhantomRing](./PhantomRing/) | Linux malware analysis, `io_uring`, C2, defense evasion | ✅ Completed |
 | [Baggage](./Baggage/) | Windows registry forensics, ShellBags, attacker collection and staging | ✅ Completed |
 | [Phantom](./Phantom/) | Linux memory forensics, kernel rootkit, ftrace hooks and C2 | ✅ Completed |
+| [KitsuneHook](./KitsuneHook/) | Threat intelligence, Winnti/RevivalStone, rootkit tradecraft and detection engineering | ✅ Completed |
 
 ---
 
