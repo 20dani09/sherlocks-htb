@@ -14,6 +14,7 @@ Personal write-ups and malware-analysis notes for Hack The Box Sherlocks.
 | [KitsuneHook](./KitsuneHook/) | Threat intelligence, Winnti/RevivalStone, rootkit tradecraft and detection engineering | ✅ Completed |
 | [TaskForce](./TaskForce/) | Windows SIEM threat hunting, RDP session reconstruction, PowerShell reconnaissance and scheduled-task persistence | ✅ Completed |
 | [CAMouflage](./CAMouflage/) | Windows DFIR, cracked-software delivery, AutoIt loader analysis, payload reconstruction and C2 enrichment | ✅ Completed |
+| [Stonks](./Stonks/) | Windows DFIR, Data Deduplication, deleted DOCX reconstruction and financial forensics | ✅ Completed |
 
 ---
 
