@@ -44,6 +44,8 @@ print("Last modified by:", root.findtext(cp + "lastModifiedBy"))
 
 To inspect document text without Microsoft Word, read `word/document.xml` from the same ZIP, preserving the table row/cell structure rather than relying on a simple text search.
 
+![Audited profit versus internal loss](./assets/profit-comparison.svg)
+
 ## Consolidated Profit and Loss Account — financial year 2024
 
 The row `Profit for the year` appears in both documents, in the **2024** column of the consolidated profit-and-loss table. The column header is **`2024 $'000`**: values are shown in **thousands of dollars**.
