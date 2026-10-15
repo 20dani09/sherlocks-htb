@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 330" role="img" aria-labelledby="title desc">
+<title id="title">Stonks profit comparison — audited versus internal financial report</title>
+<desc id="desc">Audited 2024 profit positive 2,672,196 thousand dollars; recovered internal 2024 loss negative 1,647,555 thousand dollars; gap 4,319,751 in thousands of dollars.</desc>
+<defs><style>
+.bg{fill:#0b1220}.title{font-family:Arial,sans-serif;fill:#f8fafc;font-size:21px;font-weight:700}.body{font-family:Arial,sans-serif;fill:#cbd5e1;font-size:15px}.small{font-family:Arial,sans-serif;fill:#94a3b8;font-size:13px}.value{font-family:Arial,sans-serif;fill:#f8fafc;font-size:17px;font-weight:bold}.axis{stroke:#94a3b8;stroke-width:2}
+</style></defs>
+<rect class="bg" width="970" height="330" rx="16"/>
+<text class="title" x="32" y="44">Stonks · 2024 profit for the year</text>
+<text class="small" x="32" y="67">Consolidated Profit and Loss Account · amounts in $'000 (thousands of dollars)</text>
+<line class="axis" x1="440" y1="97" x2="440" y2="246"/>
+<line x1="145" y1="246" x2="880" y2="246" stroke="#334155" stroke-width="1"/>
+<text class="small" x="427" y="267">0</text>
+<text class="small" x="145" y="267">Loss</text>
+<text class="small" x="838" y="267">Profit</text>
+<text class="body" x="32" y="133">Audited</text>
+<rect x="440" y="106" width="400" height="43" rx="5" fill="#0891b2"/>
+<text class="value" x="850" y="134" text-anchor="end">+2,672,196</text>
+<text class="body" x="32" y="208">Internal</text>
+<rect x="193" y="181" width="247" height="43" rx="5" fill="#dc4961"/>
+<text class="value" x="204" y="209">−1,647,555</text>
+<text class="value" x="32" y="307">Gap: 4,319,751 ($'000)</text>
+<text class="small" x="950" y="307" text-anchor="end">Audited − Internal</text>
+</svg>
