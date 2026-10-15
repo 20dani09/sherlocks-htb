@@ -64,7 +64,7 @@ sequenceDiagram
     participant Examiner as Forensic examiner
     Note over NTFS,Dedup: File has been optimized
     NTFS->>Dedup: Reparse mapping points to chunks
-    Note over NTFS: File is deleted; record marked unused
+    Note over NTFS: File is deleted and the MFT record is marked unused
     Note over Dedup: Chunks may remain until garbage collection
     Examiner->>NTFS: Recover record + reparse metadata
     Examiner->>Dedup: Resolve stream map + chunk locations
