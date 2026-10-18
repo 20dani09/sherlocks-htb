@@ -1,0 +1,16 @@
+# Never publish live malware samples or raw laboratory artifacts.
+shadow_monarch
+*.elf
+*.bin
+*.zip
+*.7z
+*.rar
+*.pcap
+*.pcapng
+*.strace
+*.strace.*
+*.core
+core.*
+evidencias/
+samples/
+malware-analysis/
