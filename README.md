@@ -10,6 +10,7 @@ Personal write-ups and malware-analysis notes for Hack The Box Sherlocks.
 |---|---|---|
 | [WhaleSecret](./WhaleSecret/) | Dockerized Apache Superset DFIR, CVE-2023-27524, SQL Lab command execution, pickle deserialization and PoC correlation | ✅ Completed |
 | [PhantomRing](./PhantomRing/) | Linux malware analysis, `io_uring`, C2, defense evasion | ✅ Completed |
+| [ShadowMonarch](./ShadowMonarch/) | Linux passive backdoor analysis, classic BPF magic-packet signaling, RC4, process masquerading and REMnux validation | ✅ Completed |
 | [Baggage](./Baggage/) | Windows registry forensics, ShellBags, attacker collection and staging | ✅ Completed |
 | [Phantom](./Phantom/) | Linux memory forensics, kernel rootkit, ftrace hooks and C2 | ✅ Completed |
 | [KitsuneHook](./KitsuneHook/) | Threat intelligence, Winnti/RevivalStone, rootkit tradecraft and detection engineering | ✅ Completed |
