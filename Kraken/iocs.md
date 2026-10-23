@@ -82,7 +82,7 @@ Full User-Agent examples are documented in [malware-analysis.md](./malware-analy
 | Impair Defenses | [T1562.001](https://attack.mitre.org/techniques/T1562/001/) | Code attempting to tamper with AMSI and ETW in memory |
 | Deobfuscate/Decode Files or Information | [T1140](https://attack.mitre.org/techniques/T1140/) | Batch obfuscation, Base64 reconstruction, AES/GZip unpacking |
 | Reflective Code Loading | [T1620](https://attack.mitre.org/techniques/T1620/) | <code>Assembly.Load(byte[])</code> of managed assemblies |
-| Dynamic Resolution | [T1637](https://attack.mitre.org/techniques/T1637/) | Dynamic-DNS hostname used as configured C2 |
+| Dynamic Resolution (configured DDNS) | [T1568](https://attack.mitre.org/techniques/T1568/) | Dynamic-DNS hostname used as configured C2 |
 | Application Layer Protocol / C2 | **Configuration only** | Host and port recovered; victim-side connection not verified |
 
 **Caution:** the final row is intentionally not assigned a specific ATT&CK protocol subtechnique because the provided host evidence does not identify the full application-layer C2 protocol.
