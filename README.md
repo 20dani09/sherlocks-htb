@@ -17,7 +17,6 @@ Personal write-ups and malware-analysis notes for Hack The Box Sherlocks.
 | [TaskForce](./TaskForce/) | Windows SIEM threat hunting, RDP session reconstruction, PowerShell reconnaissance and scheduled-task persistence | ✅ Completed |
 | [CAMouflage](./CAMouflage/) | Windows DFIR, cracked-software delivery, AutoIt loader analysis, payload reconstruction and C2 enrichment | ✅ Completed |
 | [Stonks](./Stonks/) | Windows DFIR, Data Deduplication, deleted DOCX reconstruction and financial forensics | ✅ Completed |
-
 | [Kraken](./Kraken/) | Windows RAT DFIR, JavaScript-to-BAT loader, PowerShell AMSI/ETW patching, two-layer AES/GZip .NET unpacking, persistence and C2 enrichment | ✅ Completed |
 
 ---
