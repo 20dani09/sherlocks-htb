@@ -14,7 +14,7 @@ The following twelve answers correspond to the solved Sherlock questions. Dates 
 | 8 | SHA-1 after decryption | **052c0687f023564a3c31fb652bea3405341272cb** | SHA-1 of the 49,664-byte, GZip-inflated final PE |
 | 9 | Mobile User-Agent in final PE | **See exact string below** | UTF-16LE strings inside recovered PE |
 | 10 | Variable holding the mutex | **Territories** | .NET static field <code>Antarctica.Territories</code> of type <code>System.Threading.Mutex</code> |
-| 11 | IP:port of C2 connection | **107.172.232.84:2468** | Exact-hash ANY.RUN sandbox Connections table (**external**, not local AD1) |
+| 11 | IP:port of C2 connection | **107.172.232.84:2468** | 2025-06-11 Unit 42 exact-hash IOC bulletin + later ANY.RUN Connections (**external**, not local AD1) |
 | 12 | Full path to persistence file | **C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\5c74.bat** | File inside AD1 and Startup-folder persistence technique |
 
 ## Q9 — Full mobile User-Agent
@@ -71,7 +71,11 @@ Do not mix the separate crypto layers:
 
 The local final PE contains <code>apostlejob3.duckdns.org</code> and port <code>2468</code>, **not a proven destination IP**.
 
+A [Unit 42 bulletin published on 2025-06-11](https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-06-11-IOCs-for-Neptune-RAT-version-5.3.txt) already associated the recovered final PE's full SHA-256 with **107.172.232.84:2468** and the same DDNS hostname. This is stronger temporal corroboration because it predates the 2025-06-13 victim incident.
+
 A [public ANY.RUN report for the exact SHA-256](https://any.run/report/9d86ea12e0643cd79f6f97202716d6e7b2a0f2dc81b9255719bb5ca7aaeebd12/e51a4b2f-a59e-490b-b90f-92abd400e6c5) lists process <code>xxxxxxxxxxxxxxxxxxxxxxxxxxxx.exe</code> (PID 6644) connecting to <code>107.172.232.84:2468</code> with domain <code>apostlejob3.duckdns.org</code>. The sandbox report dates to **2026-06-04**, not the victim's 2025-06-13 incident.
+
+For historical-DNS context, another sandbox run of the matching initial JS (2025-05-27) showed that same hostname resolving to **185.167.160.222**; hostname/IP mappings must be time-scoped. The case's accepted IP remains **107.172.232.84**.
 
 ## Q12 — Why the Startup path matters
 
