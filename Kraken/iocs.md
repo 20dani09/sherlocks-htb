@@ -39,12 +39,14 @@ Other contextual evidence:
 |---|---|---|
 | C2 hostname | <code>apostlejob3.duckdns.org</code> | Local static final PE; external sandbox |
 | C2 port | <code>2468/TCP</code> | Local static final PE; external sandbox |
-| C2 IP | <code>107.172.232.84</code> | **External ANY.RUN Connections/DNS on exact recovered SHA-256** |
-| Full sandbox endpoint | <code>107.172.232.84:2468</code> | External exact-hash sandbox, **not locally proven** |
+| C2 IP | <code>107.172.232.84</code> | **Unit 42 bulletin dated 2025-06-11; later exact-SHA-256 ANY.RUN Connections/DNS** |
+| Full sandbox endpoint | <code>107.172.232.84:2468</code> | 2025-06-11 exact-hash Unit 42 bulletin + external sandbox, **not locally proven** |
 
-External observation: [ANY.RUN sample report](https://any.run/report/9d86ea12e0643cd79f6f97202716d6e7b2a0f2dc81b9255719bb5ca7aaeebd12/e51a4b2f-a59e-490b-b90f-92abd400e6c5).
+Contemporaneous exact-hash intelligence: [Palo Alto Networks Unit 42, 2025-06-11](https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-06-11-IOCs-for-Neptune-RAT-version-5.3.txt).
 
-The domain uses DuckDNS; current DNS resolutions should not be treated as evidence of what resolved at the victim's event time.
+Later external observation: [ANY.RUN sample report](https://any.run/report/9d86ea12e0643cd79f6f97202716d6e7b2a0f2dc81b9255719bb5ca7aaeebd12/e51a4b2f-a59e-490b-b90f-92abd400e6c5).
+
+The domain uses DuckDNS; current DNS resolutions should not be treated as evidence of what resolved at the victim's event time. A **2025-05-27** sandbox of the matching original JS observed <code>185.167.160.222</code> for the same hostname ([historical example](https://any.run/report/0e5c2dc881698eddca82990a30bb2f734065b2eb9ea329b03fbf454e43a254e8/b1617b4a-65fa-4434-826b-ca2e6cd5fc82)). This earlier IP is **historical context only**, not the requested IOC.
 
 ## 4. Strings / behavior indicators
 
