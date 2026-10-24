@@ -21,7 +21,7 @@ The supplied case states that the SOC contained the incident before full C2/post
 | Time standard used | **UTC** |
 | Final payload format | .NET PE32 executable, 49,664 bytes |
 | C2 configuration | <code>apostlejob3.duckdns.org:2468</code> |
-| Sandbox-observed endpoint | <code>107.172.232.84:2468</code> (external exact-hash enrichment) |
+| C2 endpoint (external attribution) | <code>107.172.232.84:2468</code> (2025-06-11 Unit 42 exact-hash IOC; corroborated by later sandbox) |
 
 No original malware binaries, decoded PowerShell payloads, credential material or raw forensic image are committed to this repository.
 
@@ -84,7 +84,7 @@ The first batch, Startup batch and <code>dwm.bat</code> are identical by SHA-256
 
 **Direct local evidence:** user execution time, dropped files, Startup persistence, identical batch contents, decoded scripts, cryptographic keys, recovered .NET PE hashes, resource name, mobile User-Agent, and RAT configuration.
 
-**Independent external enrichment:** a public ANY.RUN report on the *exact recovered SHA-256* shows the final sample communicating with <code>107.172.232.84:2468</code>; this is a different sandbox run, not a packet capture from the victim.
+**Independent external enrichment:** a [2025-06-11 Palo Alto Networks Unit 42 IOC bulletin](https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-06-11-IOCs-for-Neptune-RAT-version-5.3.txt) already links the *exact recovered SHA-256* to <code>107.172.232.84:2468</code>, while a later public ANY.RUN run of the final PE corroborates the endpoint. Neither is a packet capture from the victim.
 
 **Not established locally:** C2 handshake, successful data exfiltration, which RAT commands were executed, the exact time of SOC intervention or the actual success of all in-memory patches.
 
